@@ -14,8 +14,8 @@
         public const string LEVEL_STATIC_DATA = "StaticData/Levels";
 
         //Enemies
-        public const string SIMPLE_TOILET = "Enemies/SimpleToilet";
-        public const string BOSS_TOILET = "Enemies/ToiletBoss";
+        public const string SIMPLE_TOILET = "Enemies/VillageToilet";
+        public const string BOSS_TOILET = "Enemies/BossToilet";
         public const string ENEMY_COUNTER = "Enemies/EnemyCounter";
 
         //Player

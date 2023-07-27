@@ -22,8 +22,8 @@ public class SpawnPoint : MonoBehaviour
         List<GameObject> list = new List<GameObject>();
         for (int i = 0; i < _config.EnemiesCount; i++)
         {
-            float rX = Random.Range(-15f, 15f);
-            float rZ = Random.Range(-5f, 5f);
+            float rX = Random.Range(-1f, 1f);
+            float rZ = Random.Range(-1f, 1f);
             Vector3 pos = new Vector3(transform.position.x + rX, transform.position.y, transform.position.z);
             list.Add(_spawnService.Spawn(_enemy, pos));
         }

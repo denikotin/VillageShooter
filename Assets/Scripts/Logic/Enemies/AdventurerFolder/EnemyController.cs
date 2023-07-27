@@ -147,6 +147,18 @@ namespace Assets.Scripts.Logic.Enemies.AdventurerFolder
 
         private bool DoesTargetNear() 
         {
+            if(_enemy is BossToilet)
+            {
+                if (Vector3.Distance(_agent.transform.position, _player.position) < 6f)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+
             if (Vector3.Distance(_agent.transform.position, _player.position) < 3f)
             {
                 return true;

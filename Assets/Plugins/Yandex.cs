@@ -11,7 +11,7 @@ public class Yandex : MonoBehaviour
     public string Language;
     public string Domain;
 
-    private bool _isAdvReady = true;
+    private bool _isAdvReady = false;
 
     public event Action OnAdvOpenEvent;
     public event Action OnAdvCloseEvent;
