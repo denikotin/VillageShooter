@@ -1,4 +1,5 @@
 ﻿using System;
+using TMPro;
 using UnityEngine;
 
 public class PolygonFPSControler : MonoBehaviour
@@ -128,8 +129,8 @@ public class PolygonFPSControler : MonoBehaviour
 
     public int player_health;
 
-    public TextMesh ammo_gui;
-    public TextMesh health_gui;
+    public TextMeshProUGUI ammo_gui;
+    public TextMeshProUGUI health_gui;
 
 
     void FixedUpdate()
@@ -156,7 +157,7 @@ public class PolygonFPSControler : MonoBehaviour
         }
 
         // Player health status
-        health_gui.text = "HP : " + player_health;
+        health_gui.text =  player_health.ToString();
 
 
         // Current magazine count
